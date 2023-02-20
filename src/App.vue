@@ -1,32 +1,49 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+<style>
+.v-btn{
+  text-transform: none !important;
 }
 
-nav {
-  padding: 30px;
+.router-link,a {
+  text-decoration:none !important;
+  color:#310059 !important
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+
+@font-face {
+  font-family: "GraphikRegular";
+  src: url("./assets/fonts/GraphikRegular.otf");
+}
+
+@font-face {
+  font-family: "GraphikBold";
+  src: url("./assets/fonts/GraphikSemibold.otf");
+}
+
+
+caption,
+p,
+.caption,
+.subtitle-1,div,label,.v-btn{
+  font-family: "GraphikRegular" !important;
+}
+
+.brandcolor{
+  color:#141b3a
+}
+
+
+h1,
+h2,
+h3,
+h4{
+  font-family: "GraphikBold";
 }
 </style>
