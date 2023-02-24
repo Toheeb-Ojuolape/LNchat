@@ -1,24 +1,12 @@
-# lnchat
+# LN ⚡ CHAT
 
-## Project setup
-```
-npm install
-```
+## What would chatting on the Lightning Network look like? 🤔?
+[x] Lightning-fast messaging
+[x] Invoice creation and payment 
+[x] Instantly send and receive Sats from users on your contact list
+[x] Track your transactions and get notified of new payments
+[x] And the best part is you can choose to be anonymous (more or less pseudonymous)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# This is the frontend half of the LN⚡CHAT project.
+You can find the backend part of the project here: https://github.com/Toheeb-Ojuolape/lnchat-api
