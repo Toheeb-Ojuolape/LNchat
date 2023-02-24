@@ -6,10 +6,10 @@
       <div>
         <v-list-item class="px-2">
           <v-list-item-avatar>
-            <v-avatar color="#310059" class="white--text">Ad</v-avatar>
+            <v-avatar color="#f97316" class="white--text"><v-img :src="user ?user.photoURL:''"></v-img></v-avatar>
           </v-list-item-avatar>
           <v-list-item-title class="font-weight-medium"
-            >Hello Admin!</v-list-item-title
+            >Hello <span class="brandcolor">{{ user !== undefined ? firstName:'' }}</span> 👋🏾</v-list-item-title
           >
         </v-list-item>
       </div>
@@ -26,9 +26,16 @@
 export default {
   data: () => ({}),
   components: {},
-//   computed: {
-//     ...mapState({}),
-//   },
+  props:{
+    user:{
+      type:Object
+    }
+  },
+  computed:{
+    firstName(){
+      return this.user.displayName.split(" ")[0]
+    }
+  },
   created() {},
   methods: {},
 };
@@ -45,5 +52,11 @@ v-text-field {
 
 .searchField >>> .v-input__slot::before {
   border-style: none !important;
+}
+
+span{
+  font-size:17px;
+  font-weight:bold;
+  color:#e86b10
 }
 </style>

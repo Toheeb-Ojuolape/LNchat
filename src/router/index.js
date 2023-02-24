@@ -3,6 +3,9 @@ import VueRouter from 'vue-router'
 import Login from '../views/Auth/Login.vue'
 import Signup from "../views/Auth/Signup.vue"
 import Dashboard from "../views/DashboardPage.vue"
+import Chat from "../views/ChatPage.vue"
+import SingleChat from "../views/SingleChat.vue"
+import TransactionsPage from "../views/TransactionsPage.vue"
 
 Vue.use(VueRouter)
 
@@ -29,6 +32,22 @@ const routes = [
     path: '/dashboard',
     name: 'dashboard',
     component: Dashboard
+  },
+
+  {
+    path: '/chat',
+    name: 'chat',
+    component: Chat
+  },
+  {
+    path: '/chat/:id',
+    name: 'single-chat',
+    component: SingleChat
+  },
+  {
+    path: '/transactions',
+    name: 'transactions',
+    component: TransactionsPage
   },
 ]
 

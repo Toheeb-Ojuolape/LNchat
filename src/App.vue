@@ -12,7 +12,7 @@
 
 .router-link,a {
   text-decoration:none !important;
-  color:#310059 !important
+  color:#f97316 !important
 }
 
 
@@ -36,7 +36,7 @@ p,
 }
 
 .brandcolor{
-  color:#141b3a
+  color:#f97316 !important
 }
 
 

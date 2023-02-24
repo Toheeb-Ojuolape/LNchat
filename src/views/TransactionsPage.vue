@@ -7,7 +7,7 @@
         </v-col>
         <v-col  cols="12" md="11" sm="11" lg="11">
             <AppBar :user="user"/>
-            <DashboardComponent :balance="balance" :loading="loading"/>
+            <TransactionsComponent :transactions="transactions" :loading="loading"/>
         </v-col>
       </v-row>
     </v-main>
@@ -15,9 +15,9 @@
 </template>
 
 
-<script>
+<script lang="ts">
 import SideBar from "../components/SideBar.vue"
-import DashboardComponent from "@/components/DashboardComponent.vue"
+import TransactionsComponent from "@/components/TransactionsComponent.vue"
 import AppBar from "@/components/AppBar.vue";
 import { mapState } from "vuex";
 // import {getAuth,onAuthStateChanged} from "firebase/auth";
@@ -25,13 +25,13 @@ import { mapState } from "vuex";
 export default {
     components:{
         SideBar,
-        DashboardComponent,
+        TransactionsComponent,
         AppBar
     },
 
     computed:{
       ...mapState({
-        balance:"balance",
+        transactions:"transactions",
         loading:"loading"
       })
     },
@@ -43,7 +43,7 @@ export default {
     },
 
     created() {
-      this.$store.dispatch("fetchBalance")
+      this.$store.dispatch("fetchTransactions")
   }
   
 }
