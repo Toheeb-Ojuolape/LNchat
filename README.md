@@ -1,7 +1,7 @@
 # LN ⚡ CHAT
 
 ## What would chatting on the Lightning Network look like? 🤔?
-[x] Lightning-fast messaging
+[ x ] Lightning-fast messaging
 [x] Invoice creation and payment 
 [x] Instantly send and receive Sats from users on your contact list
 [x] Track your transactions and get notified of new payments
