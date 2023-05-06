@@ -1,5 +1,7 @@
 # LN ⚡ CHAT
 
+### Video demo 👉🏾: https://www.youtube.com/watch?v=C5X3lBnIRh8
+
 ## What would chatting on the Lightning Network look like? 🤔?
 - [x] Lightning-fast messaging
 - [x] Invoice creation and payment 
